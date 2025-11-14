@@ -1,0 +1,47 @@
+### Registro
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "password": "secret123"
+}
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "alice@example.com",
+  "password": "secret123"
+}
+
+### Listar productos (público)
+GET http://localhost:3000/api/products
+
+### Crear producto (reemplaza <TOKEN>)
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Authorization: Bearer <TOKEN>
+
+{
+  "name": "Camiseta",
+  "description": "Algodón 100%",
+  "price": 15.99,
+  "stock": 30
+}
+
+### Agregar al carrito (reemplaza IDs y TOKEN)
+PUT http://localhost:3000/api/cart/add
+Content-Type: application/json
+Authorization: Bearer <TOKEN>
+
+{
+  "productId": "<PRODUCT_ID>",
+  "quantity": 2
+}
+
+### Obtener carrito
+GET http://localhost:3000/api/cart
+Authorization: Bearer <TOKEN>

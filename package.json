@@ -1,0 +1,44 @@
+{
+  "name": "practica-3-tienda-api",
+  "version": "1.0.0",
+  "description": "API REST de tienda en línea con JWT (register/login/products/cart)",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "test": "NODE_ENV=test jest --runInBand"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "tienda",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "glob": "^11.0.3",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0",
+    "superagent": "^10.2.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.5.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.1.4"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}
