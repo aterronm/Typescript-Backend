@@ -1,3 +1,5 @@
+/*
+
 require('dotenv').config();
 const { connectDB } = require('../src/config/db');
 const Product = require('../src/models/Product');
@@ -18,3 +20,7 @@ const Product = require('../src/models/Product');
     process.exit(1);
   }
 })();
+
+*/
+
+//YA NO SIRVE, SE TUVO QUE PASAR DE JS A TS 
