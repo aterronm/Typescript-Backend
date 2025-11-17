@@ -20,11 +20,6 @@ npm run dev
 ```
 La API inicia por defecto en `http://localhost:${PORT:-3000}`
 
-### Semillas (opcional)
-```bash
-npm run seed
-```
-
 ## Endpoints
 
 ### Públicos
