@@ -2,22 +2,6 @@
 
 Implementación de una pequeña tienda con registro, autenticación JWT, gestión de productos y carritos.
 
-## Requisitos
-- Node.js 18+
-- MongoDB 6+ (o Docker)
-- npm
-
-## Variables de entorno
-Crea un archivo `.env` copiando desde `.env.example` y ajusta los valores:
-```bash
-cp .env.example .env
-```
-
-## Correr en desarrollo
-```bash
-npm install
-npm run dev
-```
 La API inicia por defecto en `http://localhost:${PORT:-3000}`
 
 ### Semillas (opcional)
@@ -60,12 +44,6 @@ npm run seed
 - Token inválido/expirado → `401` con **texto plano** `"Token inválido"`
 - Ruta inexistente → `404` con `{ "message":"Not found" }`
 
-## Ejecutar pruebas
-```bash
-npm test
-```
-
-Las pruebas usan `mongodb-memory-server`, no requiere MongoDB local.
 
 ## Estructura
 ```
